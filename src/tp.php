@@ -37,7 +37,7 @@ function toUpper($str) {
 // Q: Test that getProducts() contains "Laptop"
 // Q: Test that getProducts() contains 3 products
 function getProducts() {
-    return ["Laptop", "Mouse", "Keyboard"]; // ✅ صحيح
+    return ["Laptop", "Mouse", "Keyboard"];
 }
 
 // class User
@@ -60,15 +60,15 @@ function containsWord($word, $text) {
 // Q: Test that search("") returns []
 // Q: Test that search("query") returns ["result1", "result2"]
 function search($query) {
-    if ($query === "") return []; // ✅ صحيح
-    return ["result1", "result2"]; // ✅ صحيح
+    if ($query === "") return [];
+    return ["result1", "result2"];
 }
 
 // test calculateTotal()
 // Q: Test that calculateTotal([5, 10]) returns 15
 // Q: Test that calculateTotal([]) returns 0
-function calculateTotal($prices) {
-    return 0; // ❌ متعمد الخطأ
+function calculateTotal($price,$quantite) {
+    return $price * "quantite";
 }
 
 // test getConfig()
@@ -81,7 +81,7 @@ function getConfig($key) {
         "version" => 1.0
     ];
 
-    return $config["wrong"] ?? null; // ❌ متعمد الخطأ
+    return $config["wrong"] ?? null;
 }
 
 ?>
